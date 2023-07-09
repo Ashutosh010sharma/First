@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    {% include 'app/common/common_css.html' %}
+</head>
+<body>
+    {% include 'app/main/main_header.html' %}
+    <br><br>
+    <div class="card mb-3" style="max-width: 90%; margin-left: 70px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'app/images/c++.png'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">C++</h2>
+              <p class="card-text" style="font-size: 25px;">The C++ Programming course covers fundamental concepts of the language, including syntax, variables, control flow, functions, and object-oriented programming. Students will learn about memory management, pointers, file handling, and the C++ Standard Template Library (STL). The course emphasizes practical coding exercises and projects, promoting problem-solving skills and best practices for writing efficient and maintainable C++ code</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+<br><br>
+<div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 1</h5>
+      <p class="card-text">Introduction to C++ Programming:
+        This lecture provides an overview of C++ programming language, its syntax, and basic concepts. It covers topics like variables, data types, control flow, functions, and basic input/output operations.</p>
+      <a href="{% url 'ccc_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 2</h5>
+      <p class="card-text">Object-Oriented Programming in C++:
+        This lecture focuses on object-oriented programming (OOP) in C++. It covers the concepts of classes, objects, inheritance, polymorphism, and encapsulation. It also explains how to create and use classes and objects in C++.</p>
+      <a href="{% url 'ccc_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 3</h5>
+      <p class="card-text">Pointers and Memory Management:
+        This lecture explores pointers and memory management in C++. It covers topics like pointers, memory allocation operators (new and delete), dynamic memory allocation, memory leaks, and smart pointers.</p>
+      <a href="{% url 'ccc_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 4</h5>
+      <p class="card-text">C++ Standard Template Library (STL):
+        This lecture introduces the C++ Standard Template Library (STL), which provides a collection of classes and algorithms for common programming tasks. It covers topics like containers (vector, list, map, etc.), iterators, algorithms, and how to effectively use the STL in C++ programs.</p>
+      <a href="{% url 'ccc_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 5</h5>
+      <p class="card-text"> Exception Handling in C++:
+        This lecture focuses on exception handling in C++. It covers topics like try-catch blocks, handling different types of exceptions, throwing and catching exceptions, and best practices for exception handling in C++.</p>
+      <a href="{% url 'ccc_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 6</h5>
+      <p class="card-text">C++ Templates and Generic Programming:
+        This lecture explores templates and generic programming in C++. It covers topics like function templates, class templates, template specialization, and how to write generic code that can work with different data types.</p>
+      <a href="{% url 'ccc_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br><br>
+      {% include 'app/common/common_js.html' %}
+      {% include 'app/html/footer.html' %}
+</body>
+</html>
+
+

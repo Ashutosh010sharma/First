@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Courses</title>
+    {% include 'app/common/common_css.html' %}
+    <style>
+.r:hover {
+      background-color: #296fcc;
+    }
+    @keyframes blink {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+
+  /* Button Styles */
+ 
+</style>
+</head>
+<body style="background-color: #a6c7f5;">
+    {% include 'app/html/header.html' %}
+
+
+
+    <h3 style="margin-left: 550px; margin-top: 30px; font-family: Arial, Helvetica, sans-serif; text-decoration: solid; font-size: 40px;"><strong>Our Courses Details</strong></h3>
+    <table class="table" style="margin-top: 40px;">
+        <thead >
+          <tr>
+            <th scope="col">Course Name</th>
+            <th scope="col">Course Discription</th>
+            <th scope="col">Course Content</th>
+          
+          </tr>
+        </thead>
+        <tbody>
+            {%for c in courses_data%}
+  <tr class="r">
+<td scope="row">
+
+{{c.course_name}}
+
+</td>
+<td scope="row">
+
+{{c.course_discription}}
+
+</td>
+<td scope="row">
+
+  {{c.course_content}}
+  
+  </td>
+</tr>
+
+
+{%endfor%}
+        </tbody>
+      </table>
+
+
+
+      
+      
+      
+<br>
+<br>
+<br>
+<br>
+   
+
+    {% include 'app/common/common_js.html' %}
+    {% include 'app/html/footer.html' %}
+</body>
+</html>

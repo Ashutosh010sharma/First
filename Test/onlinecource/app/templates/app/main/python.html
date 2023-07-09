@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    {% include 'app/common/common_css.html' %}
+</head>
+<body>
+    {% include 'app/main/main_header.html' %}
+    <br><br>
+    <div class="card mb-3" style="max-width: 90%; margin-left: 70px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'app/images/python.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">PYTHON</h2>
+              <p class="card-text" style="font-size: 25px;">The Python Programming course offers a comprehensive introduction to the Python language. Students will learn essential concepts such as variables, data types, control flow, and functions. They will also explore object-oriented programming (OOP), file handling, and data manipulation using libraries like Pandas. Through practical exercises, students will gain proficiency in Python programming and develop the skills to solve real-world problems efficiently.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+<br><br>
+<div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 1</h5>
+      <p class="card-text">Introduction to Python Programming:
+        This lecture provides an overview of Python programming language, its syntax, and basic concepts. It covers topics like variables, data types, control flow, and functions.</p>
+      <a href="{% url 'python_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 2</h5>
+      <p class="card-text">Object-Oriented Programming in Python:
+        This lecture focuses on object-oriented programming (OOP) in Python. It covers the concepts of classes, objects, inheritance, and polymorphism. It also explains how to create and use classes and objects in Python.</p>
+      <a href="{% url 'python_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 3</h5>
+      <p class="card-text">File Handling and Data Manipulation:
+        This lecture explores file handling and data manipulation in Python. It covers topics like reading from and writing to files, working with CSV files, processing text files, and manipulating data using libraries like Pandas.</p>
+      <a href="{% url 'python_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 4</h5>
+      <p class="card-text">Web Scraping with Python:
+        This lecture introduces web scraping using Python. It covers the basics of HTML, CSS selectors, and libraries like BeautifulSoup and Requests. It demonstrates how to extract data from websites and save it for further analysis.</p>
+      <a href="{% url 'python_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 5</h5>
+      <p class="card-text">Python for Data Analysis:
+        This lecture focuses on data analysis using Python. It covers libraries like NumPy and Pandas, which are widely used for data manipulation, exploration, and analysis. It also includes an introduction to data visualization using Matplotlib or Seaborn.</p>
+      <a href="{% url 'python_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 6</h5>
+      <p class="card-text">Introduction to Django:
+        This lecture provides an introduction to web development using the Django framework. It covers the basics of setting up a Django project, creating models, views, and templates, handling forms, and working with databases.</p>
+      <a href="{% url 'python_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br><br>
+      {% include 'app/common/common_js.html' %}
+      {% include 'app/html/footer.html' %}
+</body>
+</html>
+
+
+
+

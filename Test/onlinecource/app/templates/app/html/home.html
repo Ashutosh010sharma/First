@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+         h1{
+  text-align: center;
+  background: linear-gradient( to right, rgb(197, 197, 56) ,rgb(49, 110, 122));
+  padding: 10px 55px;
+  border-radius: 20px;
+  color: aliceblue;
+
+         }
+
+         .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    
+    /* Card */
+    .card {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card button{margin-top: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 8px 16px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          border-radius: 4px;
+          
+
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .card {
+        width: 100%;
+      }
+    }
+    </style>
+    {% include 'app/common/common_css.html' %}
+</head>
+<body>
+    {% include 'app/html/header.html' %}
+    <br>
+    <h1>Welcome To Our Portal</h1>
+    <br><br>
+    
+
+
+    <section class="section" style="background-color: rgb(98, 90, 109);">
+
+      <h1><span style="text-align: center;background:linear-gradient(to bottom, #3c8581, #579fe7);
+        padding: 10px 55px;border-radius: 20px;color: rgb(0, 0, 0); font-size: 50px;">Our Courses</span></h1>
+        <br>
+      <div class="card-container">
+        <div class="card">
+          <img src="{% static 'app/images/java.jpg'%}" alt="Card Image 1">
+          <h3>JAVA</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, corrupti culpa mollitia distinctio commodi tempora suscipit amet ipsum velit laboriosam, quia deserunt. Consequuntur, corporis. Voluptates repellat ipsa corrupti rerum, neque eaque aut fugiat quod placeat nobis sit enim! Maxime esse, nesciunt quam odio fugit quasi? Mollitia laborum repellat facilis quasi at laudantium sapiente, quibusdam, non similique in inventore, provident omnis.</p>
+          <a href="{{'signup/'}}"><button>Start Learning</button></a>
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/python.jpg'%}" alt="Card Image 2">
+          <h3>PYTHON</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus nulla debitis, amet eveniet quas dolores eos est iusto non labore corporis earum illo inventore error molestias, laborum exercitationem nemo facere illum eligendi sunt soluta excepturi ut quaerat! Aliquid voluptates recusandae dolores. Necessitatibus iusto asperiores esse ipsum nemo tempore optio facere. Sunt ea minima pariatur commodi odit, magni veritatis laudantium architecto?.</p>
+          <a href="{{'signup/'}}"><button>Start Learning</button></a>
+          
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/c++.png'%}" alt="Card Image 3">
+          <h3>C++</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae obcaecati suscipit quos aperiam illo optio, soluta rerum commodi error quae itaque, adipisci accusamus tenetur, animi sit quidem quaerat? Quam beatae in quaerat, corporis rerum iste omnis, reiciendis vel doloremque suscipit perferendis quos repellat cupiditate non aliquam pariatur alias vero. Cupiditate nisi vero quibusdam fugiat repellendus sit consectetur iusto, nam blanditiis.</p>
+          <a href="{{'signup/'}}"><button>Start Learning</button></a>
+
+
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/c++.png'%}" alt="Card Image 4">
+          <h3>C++</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dolorum molestiae odit quaerat aliquid voluptates deleniti consequatur, porro iste voluptatum, dicta ut. Dolorem voluptatem suscipit aperiam laboriosam dolor placeat hic minima, neque ut adipisci tenetur sequi voluptas obcaecati, officiis impedit nulla ipsum ratione laudantium dolores distinctio eaque aut ducimus consequuntur animi! Quidem at sed dicta quisquam, repudiandae totam dolor fugiat!</p>
+          <a href="{{'signup/'}}"><button>Start Learning</button></a>
+
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/python.jpg'%}" alt="Card Image 5">
+          <h3>PYTHON</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia suscipit quidem ullam et explicabo magni facere est dolor hic ratione. Ipsa deleniti unde sint id officiis veniam dolorum, modi amet porro eius cum, nihil similique odit blanditiis dolore numquam consequuntur asperiores tempora rem sequi, adipisci quaerat. Ipsum atque aut commodi magnam, quo consectetur modi? Sapiente est eum accusamus recusandae cupiditate!</p>
+          <a href="{{'signup/'}}"><button>Start Learning</button></a>
+          
+
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/java.jpg'%}" alt="Card Image 6">
+          <h3>JAVA</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis libero corrupti, quasi inventore odit itaque maxime exercitationem autem natus excepturi animi, accusantium esse, saepe aspernatur consequuntur voluptate illo ea accusamus repellendus. Voluptas voluptate explicabo blanditiis quasi soluta consequatur, in sequi repellendus quae, consectetur corrupti numquam harum dignissimos reiciendis nisi itaque, odit repudiandae ullam ipsa unde culpa molestias eaque sed rem.</p>
+          <a href="{{'signup/'}}"><button>Start Learning</button></a>
+        
+
+        </div>
+      </div>
+    
+    </section>
+    
+    
+
+
+    {% include 'app/html/footer.html' %}
+
+    {% include 'app/common/common_js.html' %}
+</body>
+</html>
+
+
+
+
+
+{% comment %} user=dell
+password=123
+email=dell@gmail.com {% endcomment %}

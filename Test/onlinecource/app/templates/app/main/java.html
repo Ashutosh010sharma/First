@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python</title>
+    {% include 'app/common/common_css.html' %}
+</head>
+<body>
+    {% include 'app/main/main_header.html' %}
+    <br><br>
+    <div class="card mb-3" style="max-width: 90%; margin-left: 70px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{% static 'app/images/java.jpg'%}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">JAVA</h>
+              <p class="card-text" style="font-size: 25px;">The Java Programming course provides a comprehensive introduction to the Java language. Students will learn essential concepts such as variables, data types, control flow, and functions. Object-oriented programming (OOP) principles including classes, objects, inheritance, and polymorphism are covered. Additionally, topics like exception handling, file I/O, and the Java Collections Framework are explored. Through practical coding exercises, students will gain proficiency in Java programming and develop problem-solving skills for real-world applications.</p>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+<br><br>
+<div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 1</h5>
+      <p class="card-text">Introduction to Java Programming:
+        This lecture provides an introduction to Java programming language, its syntax, and basic concepts. It covers topics like variables, data types, control flow, and functions. It also introduces object-oriented programming (OOP) concepts in Java.</p>
+      <a href="{% url 'java_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 2</h5>
+      <p class="card-text">Java Classes and Objects:
+        This lecture focuses on classes and objects in Java. It covers topics like creating classes, defining attributes and methods, encapsulation, inheritance, and polymorphism. It also explains how to create and use objects in Java.
+     </p>
+      <a href="{% url 'java_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 3</h5>
+      <p class="card-text">Exception Handling in Java:
+        This lecture explores exception handling in Java. It covers topics like try-catch blocks, handling different types of exceptions, throwing and creating custom exceptions, and best practices for exception handling.</p>
+      <a href="{% url 'java_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 4</h5>
+      <p class="card-text">Java Collections Framework:
+        This lecture introduces the Java Collections Framework, which provides a set of data structures and algorithms for storing and manipulating collections of objects. It covers topics like lists, sets, maps, iterators, and the various classes and interfaces provided by the Collections Framework.</p>
+      <a href="{% url 'java_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 5</h5>
+      <p class="card-text">Java Multithreading:
+        This lecture focuses on multithreading in Java. It covers topics like creating and managing threads, thread synchronization, inter-thread communication, and handling thread concurrency issues. It also discusses the use of Java's concurrent utilities.</p>
+      <a href="{% url 'java_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br>
+  <div class="card" style="max-width: 85%; margin-left: 100px;">
+    <div class="card-body">
+      <h5 class="card-title">Lecture 6</h5>
+      <p class="card-text">Java Swing GUI Programming:
+        This lecture provides an introduction to Java Swing, a graphical user interface (GUI) toolkit for Java applications. It covers topics like creating GUI components, event handling, layouts, and building interactive user interfaces using Swing.</p>
+      <a href="{% url 'java_content'%}" class="btn btn-primary">Click to Watch</a>
+    </div>
+  </div>
+  <br><br>
+      {% include 'app/common/common_js.html' %}
+      {% include 'app/html/footer.html' %}
+</body>
+</html>
+
+
+

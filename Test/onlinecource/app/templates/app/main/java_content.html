@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Video Player</title>
+  <style>
+    *{
+        margin: 0;padding: 0;
+        box-sizing: border-box;
+        text-transform: capitalize;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: normal;
+    }
+    body{
+        background-color: #eee
+    }
+    .heading{
+        color:#444;
+        font-size: 40px;
+        text-align: center;
+        padding: 10px;
+    }
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+        padding: 5px 5%;
+    }
+   .container .main-video{
+      background-color: #fff;
+      border-radius: 5px;
+      padding: 10px;
+   }
+   .container .main-video .video{
+    width: 100%;
+    border-radius: 5px;
+   }
+   .container .main-video .tittle{
+     color: #333;
+     font-size: 23px;
+     padding-top: 15px;
+     padding-bottom: 15px;
+
+   }
+   .container .video-list{
+    background: #fff;
+    border-radius: 5px;
+    height: 520px;
+    overflow-y: scroll;
+   }
+.container .video-list::-webkit-scrollbar{
+    width: 7px;
+}
+.container .video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 50px;
+}
+.container .video-list.video-list::-webkit-scrollbar-track-thumb{
+    background: #666;
+    border-radius: 50px;
+}
+.container .video-list .vid video{
+    width: 100px;
+    border-radius: 5px;
+}
+.container .video-list .vid{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.container .video-list .vid:hover{
+    background: #eee;
+}
+.container .video-list .vid.active{
+    background: #3679d1;
+}
+.container .video-list .vid.active .tittle{
+    color: #fff;
+}
+.container .video-list .vid .tittle{
+    color: #333;
+    font-size: 17px;
+}
+@media(max-width:991px){
+    .container{
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;
+    }
+}
+@media(max-width:786px){
+    .container{
+        grid-template-columns: 1fr;
+        
+    }
+}
+
+  </style>
+  {% include 'app/common/common_css.html' %}
+</head>
+<body>
+    {% include 'app/main/main_header.html' %}
+    <h3 class="heading">JAVA Playlist</h3>
+    <div class="container">
+        <div class="main-video">
+            <div class="video">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                <h3 class="tittle">01. video tittle</h3>
+            </div>
+        </div>
+        <div class="video-list">
+            <div class="vid active">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <h3 class="tittle">01. video tittle</h3> 
+            </div>
+            <div class="vid">
+                
+                    <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                
+                   <h3 class="tittle">02. video tittle</h3> 
+               </div>
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/EtQEVpZxJzU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">03. video tittle</h3> 
+               </div>
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">04. video tittle</h3> 
+               </div>
+               
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/c-X6zG0kQxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">05. video tittle</h3> 
+               </div>
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">06. video tittle</h3> 
+               </div>
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">07. video tittle</h3> 
+               </div>
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">08. video tittle</h3> 
+               </div>
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">09. video tittle</h3> 
+               </div>
+               <div class="vid">
+                <iframe width="33%" height="200px" src="https://www.youtube.com/embed/0TFjAmGw9pQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                   <h3 class="tittle">10. video tittle</h3> 
+               </div>
+
+        </div>
+
+    </div>
+<script>
+let listVideo = document.querySelectorAll('.video-list .vid');
+let mainVideo = document.querySelector('.main-video .tittle');
+let tittle = document.querySelector('.main-video .tittle');   
+
+listVideo.forEach(video =>{
+    video.onclick=()=>{
+        listVideo.forEach(vid => vid.classList.remove('active'));
+        video.classList.add('active');
+        if(video.classList.contains('active')){
+            let src=video.children[0].getAttribute('src');
+            mainVideo.src = src;
+            let text = video.children[1].innerHTML;
+            tittle.innerHTML = text;
+
+        };
+    
+    };
+});
+</script>
+
+     
+  {% include 'app/common/common_js.html' %}
+  
+</body>
+</html>

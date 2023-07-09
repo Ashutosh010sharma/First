@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+         h1{
+  text-align: center;
+  background: linear-gradient( to right, rgb(197, 197, 56) ,rgb(49, 110, 122));
+  padding: 10px 55px;
+  border-radius: 20px;
+  color: aliceblue;
+
+         }
+
+         .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      
+    }
+    
+    /* Card */
+    .card {
+      width: 300px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    
+    .card img {
+      width: 100%;
+      height: auto;
+    }
+    .card button{margin-top: 10px;
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 8px 16px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 14px;
+          border-radius: 4px;
+          
+
+    }
+    
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .card {
+        width: calc(50% - 20px);
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .card {
+        width: 100%;
+      }
+    }
+    </style>
+    {% include 'app/common/common_css.html' %}
+</head>
+<body>
+    {% include 'app/main/main_header.html' %}
+    <br>
+    <h1>Welcome To Our Portal</h1>
+    <br><br>
+    
+
+
+    <section class="section" style="background-color: rgb(98, 90, 109);">
+
+      <h1><span style="text-align: center;background:linear-gradient(to bottom, #3c8581, #579fe7);
+        padding: 10px 55px;border-radius: 20px;color: rgb(0, 0, 0); font-size: 50px;">Our Courses</span></h1>
+        <br>
+      <div class="card-container">
+        <div class="card">
+          <img src="{% static 'app/images/java.jpg'%}" alt="Card Image 1">
+          <h3>JAVA</h3>
+          <p> Most driving school programs begin with classroom instruction. In these sessions, you will learn about traffic laws, road signs, defensive driving techniques, and other essential information related to driving. The classroom sessions are typically conducted by experienced instructors who will provide you with the necessary knowledge to become a safe and responsible driver.</p>
+          <a href="{% url 'java'%}"><button>Start Learning</button></a>
+          
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/python.jpg'%}" alt="Card Image 2">
+          <h3>PYTHON</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos harum asperiores quibusdam ipsam nam maiores quaerat vero! Nihil dolorem impedit nemo blanditiis dolores accusantium officiis voluptatum velit, fuga deleniti eos alias veniam, possimus iure eaque quibusdam vel pariatur quae, asperiores exercitationem vitae. Nam sequi amet veniam laboriosam minima blanditiis enim voluptatibus ab dolorum tenetur. Pariatur aliquam tempore earum molestias asperiores!</p>
+          <a href="{% url 'python'%}"><button>Start Learning</button></a>
+          
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/c++.png'%}" alt="Card Image 3">
+          <h3>C++</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure libero quos eaque, est veritatis ad similique officia harum, atque ipsam laborum reiciendis, quasi cupiditate mollitia cum esse modi facilis nisi omnis ipsum. Dicta esse soluta illum ipsa tempora, ipsum possimus, enim itaque deserunt ab vitae voluptatibus magnam similique accusantium id unde culpa voluptatum vel officiis veritatis sunt neque at eaque.</p>
+          <a href="{% url 'ccc'%}"><button>Start Learning</button></a>
+
+
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/c++.png'%}" alt="Card Image 4">
+          <h3>C++</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto, sed. Aut, quos reiciendis ducimus ullam deleniti at dignissimos ipsam accusantium. Ipsa, excepturi laudantium aliquid pariatur aut iste a maxime soluta aperiam distinctio enim aspernatur ratione! Ipsam rem molestiae perferendis neque ea magni, totam temporibus ab consequuntur, exercitationem ratione quas eaque animi sequi suscipit, quo libero esse quae nam consectetur quod.
+
+          </p>
+          <a href="{% url 'ccc'%}"><button>Start Learning</button></a>
+
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/python.jpg'%}" alt="Card Image 5">
+          <h3>PYTHON</h3>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, repellendus, fugit placeat velit nihil sapiente quibusdam odit adipisci eos facilis reprehenderit vel alias architecto optio aliquid sint quaerat, dolorum exercitationem qui! Quidem pariatur similique necessitatibus in molestias incidunt eos laudantium explicabo ullam aut id aliquid totam mollitia, dolor facere cum ratione, repellat natus quae. Velit nulla minima eos debitis nam.</p>
+          <a href="{% url 'python'%}"><button>Start Learning</button></a>
+          
+
+        </div>
+        <div class="card">
+          <img src="{% static 'app/images/java.jpg'%}" alt="Card Image 6">
+          <h3>JAVA</h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sequi id dicta numquam excepturi vitae maiores odit magnam nemo ipsam! Sint laborum odit saepe maxime nihil corrupti nemo quod autem corporis, dignissimos deserunt odio harum minus reprehenderit consequuntur dicta, voluptate sapiente voluptates unde iste omnis vitae optio. Distinctio assumenda deserunt non perspiciatis doloremque esse provident architecto, illum iste ex. Harum.</p>
+          <a href="{% url 'java'%}"><button>Start Learning</button></a>
+        
+
+        </div>
+      </div>
+    
+   
+    {% include 'app/html/footer.html' %}
+
+    {% include 'app/common/common_js.html' %}
+</body>
+</html>
+
+
+
+
+
+{% comment %} user=dell
+password=123
+email=dell@gmail.com {% endcomment %}
